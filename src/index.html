@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Yana Engine</title>
+    <link rel="stylesheet" href="index.css" />
+    <script src="https://cdn.jsdelivr.net/npm/phaser@3.51.0/dist/phaser-arcade-physics.min.js"></script>
+  </head>
+  <body>
+
+    <div id="editor" style="height: 480px; width: 600px;" class="pane">
+      <h3>Code Editor</h3>
+      <button id="generateCodeButton">Générer le code JavaScript</button>
+      <button id="saveButton">Sauvegarder le Workspace</button>
+      <button id="loadButton">Charger une sauvegarde</button>
+      <!--
+
+        <category name="custom">
+        <block type="string_length"></block>
+      </category>
+      -->
+    </div>
+
+    <div id="tab-explorer" class="pane">
+      <div class="tab-label" onclick="openTab(event, 'tab1')">Actor manager</div>
+      <div class="tab-label" onclick="openTab(event, 'tab2')">Viewport</div>
+      <div class="tab-label" onclick="openTab(event, 'tab3')">Animation</div>
+      <div class="tab-label" onclick="openTab(event, 'tab3')">Map manager</div>
+
+      <div class="tab-content" id="tab1">
+        <h3>Actor manager</h3>
+        <div class="character">
+          <div class="card">
+            <img src="img_avatar.png" alt="Avatar" style="width:100%">
+            <div class="container">
+              <h4><b>John Doe</b></h4>
+              <p>Architect & Engineer</p>
+            </div>
+          </div>
+        </div>
+
+        <a href="#" class="float">
+          <span class="plus">+</span>
+        </a>
+
+
+      </div>
+
+      <div class="tab-content" id="tab2">
+        <!--AFFICHE VIEWPORT-->
+      </div>
+
+      <div class="tab-content" id="tab3">
+      </div>
+
+      <div class="tab-content" id="tab4">
+      </div>
+    </div>
+
+    <script src="../node_modules/blockly/blockly.min.js"></script>
+    <script src="../node_modules/blockly/blocks_compressed.js"></script>
+    <script src="../node_modules/blockly/msg/en.js"></script> 
+    <script src="renderer.js"></script>
+    <script src="Blockly/blockly.js"></script>
+    <script src="Blockly/custom.js"></script>
+    <script type="module" src="Phaser/phaser.js"></script>
+  </body>
+</html>

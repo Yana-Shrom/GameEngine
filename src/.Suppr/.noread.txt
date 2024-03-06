@@ -1,0 +1,4 @@
+Type de jeu possible :
+
+-Jeu de carte
+-Jeu de plateforme
